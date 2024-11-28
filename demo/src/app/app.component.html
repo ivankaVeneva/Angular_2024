@@ -1,5 +1,19 @@
 <app-navigation-bar />
 <app-home/>
-<app-footer />
 <app-user-list />
+
+<div id = "numbers-wraper">
+    @for (n of numbers; track $index) { 
+    @if (n % 2 === 0) {
+    <div class="num blue">{{ n }}</div>
+    } @else if (n === 5) {
+    <div class="num">{{ n }}</div>
+    } @else {
+    <div class="num red">{{ n }}</div>
+    }
+    }
+</div>
+
+<app-footer />
+
 <router-outlet />

@@ -2,7 +2,9 @@
     <h3>My users list:</h3>
     <ul>
         @for (item of users; track $index) {
-        <li>{{item.id}} - {{item.name}} -> {{item.age}}</li>
+        <app-user-item />
+            <!-- <li> Name: {{item.name}}, age: {{item.age}}</li> -->
+        <!-- <li>{{item.id}} - {{item.name}} -> {{item.age}}</li> -->
         }
     </ul>
 </div>
