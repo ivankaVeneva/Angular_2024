@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { Component, Input } from '@angular/core';
+import { User } from '../types';
 
 @Component({
   selector: 'app-user-item',
@@ -9,5 +9,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   styleUrl: './user-item.component.css'
 })
 export class UserItemComponent {
-user = {name:`Hardcoded name`, age: -1};
+  @Input(`userProp`) user: User | null = null;
+//user = {name:`Hardcoded name`, age: -1};
 }
