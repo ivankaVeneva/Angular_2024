@@ -25,5 +25,5 @@ export class TestDemoComponent {
 
   onOutputActivate(ev: boolean): void {
     console.log('Output Activated!', ev);
-  }
+  } 
 }

@@ -36,7 +36,7 @@ export class PopupComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     console.log('UNSUBSCRIBE from all of the EVENTS');
   }
-
+ 
   handleClick() {
     this.onChildEvent.emit(!this.toggle);
   }
