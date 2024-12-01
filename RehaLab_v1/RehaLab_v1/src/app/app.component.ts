@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from "./core/footer/footer.component";
@@ -14,8 +13,10 @@ import { MainComponent } from "./main/main.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  constructor(private http: HttpClient) {
-  }
-  
   title = 'RehaLab_v1';
+
+
+ngOnInit() {
+
+  }
 }
