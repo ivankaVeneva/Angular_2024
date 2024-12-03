@@ -11,3 +11,10 @@ export interface User {
     __v: number;
   }
   
+  export interface UserForAuth {
+    firstName: string;
+    email: string;
+    tel: string;
+    password: string;
+    id: string;
+  }
