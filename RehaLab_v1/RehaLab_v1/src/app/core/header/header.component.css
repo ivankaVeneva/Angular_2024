@@ -88,3 +88,7 @@ header {
     scale: 1.1;
   }
   
+
+.user-profile-btn {
+  min-width: 125px;
+}
