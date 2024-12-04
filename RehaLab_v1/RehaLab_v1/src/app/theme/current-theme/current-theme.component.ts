@@ -14,7 +14,10 @@ export class CurrentThemeComponent implements OnInit {
   // theme: Theme  | null = null;  или 
   theme = {} as Theme; // casting -  theme = object as Theme
 
-  constructor(private route: ActivatedRoute, private apiService: ApiService) {}
+  constructor(
+    private route: ActivatedRoute,
+    private apiService: ApiService,
+  ) {}
 
   ngOnInit(): void {
     // this.route.params.subscribe((data) => {
