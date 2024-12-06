@@ -22,7 +22,7 @@ export class ThemesListComponent implements OnInit {
       this.themes = themes;
       this.isLoading = false;
       
-      console.log({ themes });
+      //console.log({ themes });
 
     });
   }
