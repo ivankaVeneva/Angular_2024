@@ -31,8 +31,17 @@ export const routes: Routes = [
         },
       ],
     },
-    { path: 'add-theme',
-      component: AddThemeComponent,
+    // { path: 'add-theme',
+    //   component: AddThemeComponent,
+    //   canActivate: [AuthGuard],
+    // },
+
+    {
+      path: 'add-theme',
+      loadComponent: () =>
+        import('./theme/add-theme/add-theme.component').then(
+        (c) => c.AddThemeComponent
+      ),
       canActivate: [AuthGuard],
     },
     //End - Theme routing
