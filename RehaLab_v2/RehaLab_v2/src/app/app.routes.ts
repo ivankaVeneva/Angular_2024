@@ -9,10 +9,12 @@ import { MainComponent } from './main/main.component';
 import { CurrentThemeComponent } from './theme/current-theme/current-theme.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ErrorMsgComponent } from './core/error-msg/error-msg.component';
+import { ProductsComponent } from './products/products.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
+    { path: 'products', component: ProductsComponent },
 
     //Start - User routing
     { path: 'login', component: LoginComponent },
