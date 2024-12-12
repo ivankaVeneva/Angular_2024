@@ -57,4 +57,17 @@
     font-size: 1em;
     color: #234465;
   }
+
+  .homeproducts-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0;
+  }
+  
+  .homeproducts-wrap > img {
+    height: 15vh;
+    margin-right: 3vw;
+    margin-left: -4vw;
+  }
   
