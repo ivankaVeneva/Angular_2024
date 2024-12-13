@@ -59,7 +59,7 @@ header {
     margin-right: 3vw;
     margin-left: -4vw;
   }
-  
+    
   .mini-navbar-wrap {
     display: flex;
     flex-direction: row;
@@ -84,11 +84,39 @@ header {
     border-radius: 20px;
     text-shadow: 1px 1px rgb(95, 94, 94);
   }
+
   .mini-navbar ul li:hover {
     scale: 1.1;
-  }
-  
+  }  
 
 .user-profile-btn {
   min-width: 125px;
+}
+
+nav ul .submenu {
+  display: none; 
+  position: absolute; 
+  background: #057375; 
+  padding: 10px;
+  border-radius: 0.1px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 10; 
+} 
+
+nav ul li:hover > .submenu {
+  display: block; 
+}
+
+nav ul .submenu li {
+  margin: 5px 0; 
+  text-align: left; 
+  width: 200px; 
+}
+
+ /* Responsive Design */
+ @media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

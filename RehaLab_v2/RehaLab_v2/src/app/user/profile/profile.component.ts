@@ -31,7 +31,9 @@ export class ProfileComponent implements OnInit {
       Validators.required,
       Validators.minLength(5),
     ]),
-    email: new FormControl('', [Validators.required, emailValidator(DOMAINS)]),
+    email: new FormControl('', [
+      Validators.required,
+      emailValidator(DOMAINS)]),
     tel: new FormControl(''),
   });
 
