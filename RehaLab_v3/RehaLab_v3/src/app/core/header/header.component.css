@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #005dac;
+}
+
+/* Header Styling */
+header {
+  background: #eceff0;
+  padding: 20px;
+}
+header li:hover {
+  scale: 1.1;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo-wrap img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo {
+  font-size: 36px;
+  color: #005dac;
+  font-weight: bold;
+  text-align: center;
+}
+.mini-navbar-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #005dac; 
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #046060;
+}
+
+/* Submenu Styling */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li ul li {
+  margin: 0;
+}
+
+nav ul li ul li a {
+  color: #234465;
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+nav ul li ul li a:hover {
+  background: #f4f4f4;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

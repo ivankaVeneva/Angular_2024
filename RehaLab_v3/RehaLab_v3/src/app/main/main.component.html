@@ -1,0 +1,12 @@
+@if (isLoggedIn) {
+  <div class="container">
+    <app-themes-list />
+    <app-posts-list />
+    <app-add-theme />
+  </div>
+  } @else {
+  <app-home />
+  <app-products />
+  <app-services />
+  }
+  
