@@ -25,13 +25,7 @@
     </div>
   </div>
   <nav>
-    <ul>
-      @if(isLoggedIn){
-        <li>
-          <a routerLink="/add-theme">New Theme</a>
-        </li>
-
-      } @else {
+    <ul>  
       <li>
         <a routerLink="/home">Home</a>
       </li>
@@ -59,15 +53,14 @@
         </ul>
       </li> 
       <li>
-        <a routerLink="/about">About Us</a>
+        <a routerLink="/about-us">About Us</a>
       </li>
       <li>
         <a routerLink="/contacts">Contact Us</a>
       </li>      
       <li>
         <a routerLink="/themes">Blog</a>
-      </li>
-      }
+      </li>   
     </ul>
   </nav>
 </header>

@@ -50,13 +50,4 @@ updatePost(themeId: string, postId: string) {
 deletePost(themeId: string, postId: string){
   return this.http.delete(`/api/themes/${themeId}/posts/${postId}`);
 }
-
-addComment(themeId: string, text: string) {
-  return this.http.post<Comment>(`/api/themes/${themeId}/comments`, { text });
-}
-
-// addComment(themeId: string, comment: Post) {
-//   return this.http.post(`/api/themes/${themeId}/comments`, comment);
-// }
-
 }

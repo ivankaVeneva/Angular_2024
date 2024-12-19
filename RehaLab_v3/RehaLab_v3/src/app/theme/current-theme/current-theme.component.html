@@ -52,28 +52,25 @@
         </p>
       </div>
     </div>
-    }
 
-    @if(isLoggedIn){
-      <div class="answer-comment">
-        <p>
-          <span>{{ username }}</span>, add a comment:
-        </p>
-        <div class="answer">
-          <form (ngSubmit)="addComment()">
-            <textarea 
-              [(ngModel)]="newComment" 
-              name="commentText" 
-              id="comment" 
-              rows="5" 
-              placeholder="Write your comment here..."
-              required
-            ></textarea>
-            <button [disabled]="!newComment.trim()">Post</button>
-          </form>
-        </div>
+    } @if(isLoggedIn){
+    <div class="answer-comment">
+      <p>
+        <span>{{ username }}</span> comment:
+      </p>
+      <div class="answer">
+        <form>
+          <textarea name="postText" id="comment" cols="30" rows="10"
+            ngModel
+            #inputPostText="">
+          </textarea>
+
+          <button>Post</button>
+          <button class="delete">Delete</button>
+        </form>
       </div>
-      }
     </div>
+    
+    }
   </div>
-  
+</div>

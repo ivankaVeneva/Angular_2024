@@ -1,7 +1,7 @@
 .equipment {
     padding: 0.5em 1em;
     border: 1px solid #999;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     font-size: 0.9em;
     margin-top: 1em;
     background-color: #e4e3e3; /* Matches body background */
@@ -11,7 +11,7 @@
     background-color: #234465;
     color: white;
     text-shadow: 1px 1px rgb(43, 42, 42);
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     width: 100%;
     padding: 0.5em 1.2em;
     text-align: center;
@@ -72,7 +72,7 @@ img {
     
   .homeproducts {
     width: 100%;
-    border: 0.5em solid #c6cccf;
+    border: 1px solid #c6cccf;
     margin: 10;
     padding: 1em;    
   }
@@ -99,7 +99,7 @@ img {
     display: flex;
     background: #478fa5;
     text-decoration: none;
-    color: #c1dcf6;
+    color: #edf2f6;
   }
   
   .homeproducts figure {

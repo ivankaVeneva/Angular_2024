@@ -1,0 +1,32 @@
+<p>update-theme works!</p>
+<div class="answer-comment">
+    <div class="answer">
+        <form #form="ngForm" (ngSubmit)="updateTheme(form)">            
+             <textarea
+                name="postText"
+                id="comment"
+                cols="30"
+                rows="10"
+                ngModel
+                #inputPostText="ngModel">
+                </textarea>         
+  
+        <div class="update-theme-buttons">
+          <button class="update-theme">Update</button>
+          <button
+            class="public"
+            [disabled]="form.invalid"
+            [style]="{ backgroundColor: form.invalid ? 'grey' : '#234465' }"
+          >Update</button>
+
+          <button class="delete">Delete</button>
+          <button
+            class="public"
+            [disabled]="form.invalid"
+            [style]="{ backgroundColor: form.invalid ? 'grey' : '#234465' }"
+          >Delete</button>
+        </div>
+      </form>
+    </div>
+</div>
+  

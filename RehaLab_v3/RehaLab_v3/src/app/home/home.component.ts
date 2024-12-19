@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { UserService } from '../user/user.service';
-import { ProductsComponent } from '../products/products.component';
 
 @Component({
   selector: 'app-home',

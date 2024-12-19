@@ -11,12 +11,16 @@ import { AuthGuard } from './guards/auth.guard';
 import { ErrorMsgComponent } from './core/error-msg/error-msg.component';
 import { ProductsComponent } from './products/products.component';
 import { ServicesComponent } from './services/services.component';
+import { ContactsComponent } from './core/contacts/contacts.component';
+import { AboutUsComponent } from './core/about-us/about-us.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
     { path: 'products', component: ProductsComponent },
     { path: 'services', component: ServicesComponent },
+    { path: 'contacts', component: ContactsComponent },
+    { path: 'about-us', component: AboutUsComponent },
 
       
     //Start - User routing

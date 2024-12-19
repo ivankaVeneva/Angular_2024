@@ -1,0 +1,110 @@
+.equipment {
+    padding: 0.5em 1em;
+    border: 1px solid #999;
+    border-radius: 0.3em;
+    font-size: 0.9em;
+    margin-top: 1em;
+    background-color: #e4e3e3; /* Matches body background */
+  }
+  
+  .equipment h3 {
+    background-color: #234465;
+    color: white;
+    text-shadow: 1px 1px rgb(43, 42, 42);
+    border-radius: 0.3em;
+    width: 100%;
+    padding: 0.5em 1.2em;
+    text-align: center;
+  }
+  
+  .equipment p {
+    padding: 1em;
+    border-bottom: 1px solid #999;
+    font-style: italic;
+    color: #333; /* Darker text for readability */
+  }
+  
+  .equipment a {
+    color: white;
+    text-decoration: none;
+    background-color: #057375;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em 2em;
+    margin: 1em;
+    display: inline-block;
+    text-align: center;
+    text-shadow: 1px 1px rgb(87, 86, 86);
+    transition: transform 0.3s ease;
+  }
+  
+  .equipment a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  
+  .equipment ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 1.5em 0;
+  }
+  
+  .equipment li {
+    list-style: none;
+    font-size: 1em;
+    color: #234465;
+  } 
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .site {
+    background-color: #d6dbdf;
+    border: 1px solid #999;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 1.5em 0; 
+}
+    
+  .homeproducts {
+    width: 100%;
+    border: 1px solid #c6cccf;
+    margin: 10;
+    padding: 1em;    
+  }
+  
+  .homeproducts ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  
+  .homeproducts li {
+    flex: 1 1 calc(33% - (2 * 2em));
+    display: flex;
+    list-style: none outside;
+    border: 0.5em solid #ebe9e9;
+    background: #eeeaea;
+    padding: 1em;
+    position: relative;
+    box-shadow: 0 0 0.5em 0.1em rgba(238, 219, 219, 0.2);
+    border-radius: 0.2em;
+  }  
+  
+  .homeproducts a {
+    display: flex;
+    background: #478fa5;
+    text-decoration: none;
+    color: #edf2f6;
+  }
+  
+  .homeproducts figure {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+  }
+  
